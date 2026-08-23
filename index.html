@@ -467,6 +467,40 @@
     line-height: 1.15;
   }
 
+  /* ===== Privacy Brief ===== */
+  .privacy-brief {
+    padding: 72px 40px;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+  }
+  .privacy-brief-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .privacy-meta {
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  .privacy-brief h2 {
+    font-size: clamp(36px, 5vw, 72px);
+    margin: 0;
+    max-width: 760px;
+  }
+  .privacy-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+  .privacy-copy p {
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0;
+    max-width: 440px;
+  }
+
   /* ===== Footer ===== */
   .footer {
     padding: 48px 40px 24px;
@@ -593,6 +627,9 @@
     .manifesto { padding: 64px 24px; }
     .manifesto-grid { grid-template-columns: 1fr; gap: 24px; }
 
+    .privacy-brief { padding: 56px 24px; }
+    .privacy-brief-inner { grid-template-columns: 1fr; gap: 24px; }
+
     .footer { padding: 32px 24px 24px; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
     .footer-bar { flex-direction: column; gap: 8px; }
@@ -610,6 +647,7 @@
     <a href="#apps">Apps</a>
     <a href="#studio">Studio</a>
     <a href="#approach">Approach</a>
+    <a href="#privacy">Privacy</a>
     <a href="#contact">Contact</a>
   </nav>
   <a href="#apps" class="nav-cta">Download apps</a>
@@ -736,6 +774,20 @@
   </div>
 </section>
 
+<!-- Privacy Policy -->
+<section class="privacy-brief" id="privacy">
+  <div class="privacy-brief-inner">
+    <div>
+      <div class="mono privacy-meta">— Privacy Policy</div>
+      <h2 class="display">Your privacy, plainly handled.</h2>
+    </div>
+    <div class="privacy-copy">
+      <p>Read how Grounded Minds handles personal information across our apps and website.</p>
+      <a href="privacy.html" class="btn-secondary">Read Privacy Policy</a>
+    </div>
+  </div>
+</section>
+
 <!-- Manifesto -->
 <section class="manifesto" id="approach">
   <div class="manifesto-grid">
@@ -785,7 +837,7 @@
     </div>
     <div class="footer-col">
       <div class="mono footer-col-head">Legal</div>
-      <a href="#">Privacy</a>
+      <a href="privacy.html">Privacy Policy</a>
       <a href="#">Terms</a>
       <a href="#">EULA</a>
     </div>
